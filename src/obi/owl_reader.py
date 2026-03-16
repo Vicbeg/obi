@@ -78,7 +78,7 @@ class FindByLabel(XMLFilterBase):
         super().__init__(parent)
 
     def startElement(self, name, attrs):
-        options = ["owl:Class", "owl:AnnotationProperty", "owl:ObjectProperty", "rdf:Description"]
+        options = ["owl:Class", "owl:AnnotationProperty", "owl:DatatypeProperty", "owl:ObjectProperty", "rdf:Description"]
         parent_options = ["rdfs:subClassOf", "rdfs:subPropertyOf"]
         if name in options:
             if "rdf:about" in attrs.keys():
