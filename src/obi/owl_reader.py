@@ -37,6 +37,7 @@ class TermFinder(XMLFilterBase):
         options = [
             "owl:Class",
             "owl:AnnotationProperty",
+            "owl:DatatypeProperty",
             "owl:ObjectProperty",
             "owl:NamedIndividual",
         ]
